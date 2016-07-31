@@ -10,7 +10,7 @@ To use this template, scaffold a project with [vue-cli](https://github.com/vuejs
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack my-project
+$ vue init italomaia/webpack my-project
 $ cd my-project
 $ npm install
 $ npm run dev
