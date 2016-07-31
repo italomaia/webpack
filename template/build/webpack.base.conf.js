@@ -13,7 +13,7 @@ module.exports = {
     filename: '[name].js'
   },
   resolve: {
-    extensions: ['', '.js', '.vue'],
+    extensions: ['', '.js', '.coffee', '.vue'],
     fallback: [path.join(__dirname, '../node_modules')],
     alias: {
       'src': path.resolve(__dirname, '../src'),
@@ -38,6 +38,12 @@ module.exports = {
         loader: 'eslint',
         include: projectRoot,
         exclude: /node_modules/
+      },
+      {
+        test: /\.coffee$/,
+        loader: 'coffeelint',
+        include: projectRoot,
+        exclude: /node_modules/
       }
     ],
     {{/lint}}
@@ -49,6 +55,12 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel',
+        include: projectRoot,
+        exclude: /node_modules/
+      },
+      {
+        test: /\.coffee$/,
+        loader: 'coffee',
         include: projectRoot,
         exclude: /node_modules/
       },
