@@ -1,10 +1,17 @@
 # vue-webpack-boilerplate
 
-> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
+> This is a fork of the [vue-cli webpack template](http://vuejs-templates.github.io/webpack).
 
 ## Documentation
 
 Common topics are discussed in the [docs](http://vuejs-templates.github.io/webpack). Make sure to read it!
+
+## Features
+
+Changes added within this fork:
+
+* Coffee-Script and Coffee-Lint support
+* Static files names are no longer modified with hash (control static file cache invalidation using querystring)
 
 ## Usage
 
