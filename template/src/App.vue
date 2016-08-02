@@ -22,14 +22,10 @@
   </div>
 </template>
 
-<script>
-import Hello from './components/Hello'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+<script lang="coffee">
+Hello = require './components/Hello'
 
-export default {
-  components: {
-    Hello{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+module.exports = components: hello: Hello
 </script>
 
 <style>
